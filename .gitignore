@@ -1,0 +1,38 @@
+# Secrets. Real keys live only in .env (copy from .env.example).
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+credentials.json
+secrets.json
+
+# Python
+.venv/
+.venv.broken/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+*.egg-info/
+
+# Node
+node_modules/
+dist/
+dist-ssr/
+*.local
+*.tsbuildinfo
+
+# OS and editors
+.DS_Store
+.idea/
+.vscode/*
+!.vscode/extensions.json
+
+# Local tool state
+.claude/
+
+# Generated runtime data: audio cache, exports, sqlite, job state
+backend/data/
+eval_out/

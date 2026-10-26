@@ -1,0 +1,30 @@
+---
+description: Primer premium black-and-white light theme. Apply on every frontend change.
+globs: frontend/**/*.{tsx,css}
+alwaysApply: true
+---
+
+# Primer light theme
+
+Black and white only. No brand color, no orange, no navy, no accent hex.
+
+Inspired by Vercel / Linear / Apple HIG. Tokens live in `frontend/src/index.css` `:root`.
+
+## Surfaces
+- App: `#FCFCFC`
+- Cards, sidebars, panels: `#fff` + `border: 1px solid rgba(0,0,0,0.05)` + `shadow-sm`
+- Primary text: `#171717` tracking-tight. Secondary: `#737373`
+- UI type: Inter (or SF Pro). Handwriting fonts only inside the phone / notebook.
+
+## Controls
+Use `Button` (`frontend/src/ui/Button.tsx`) and `Field` (`frontend/src/ui/Field.tsx`).
+- Primary: `.btn-primary` — black fill, white type, pill, hover `#262626`, `active:scale(0.95)`
+- Ghost: `.btn-ghost` — white, `#404040` type, `border-neutral-200`, hover `#FAFAFA`
+- Fields: `.field` — white, `border-neutral-200`, `rounded-xl`, focus ring `rgba(23,23,23,0.10)` and black border
+
+## Layout
+- Lesson rail is a macOS sidebar: active `background #F5F5F5`, hover `rgba(0,0,0,0.05)`, no heavy cards
+- Phone sits on `shadow: 0 20px 60px -15px rgba(0,0,0,0.1)`
+- Top chrome is a floating segmented pill (`.seg`)
+- Reel debug is glass: `background rgba(255,255,255,0.8)` + backdrop-blur
+- Tap the phone screen to play/pause. Do not add play/pause buttons around the frame.
